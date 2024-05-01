@@ -3,11 +3,12 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ChatController } from './chat.controller';
 import { ChatService } from './chat.service';
+import { EventController } from './event.controller';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [],
-  controllers: [AppController, ChatController],
+  controllers: [AppController, ChatController, EventController],
   providers: [AppService, ChatService],
 })
 export class AppModule {}
